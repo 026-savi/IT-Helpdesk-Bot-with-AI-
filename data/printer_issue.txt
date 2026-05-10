@@ -1,0 +1,13 @@
+Printer Issue Solution:
+
+If printer is not working:
+
+1. Check printer power cable
+2. Ensure printer is connected to system
+3. Restart printer
+4. Check printer ink and paper
+5. Reinstall printer drivers
+
+If issue still continues:
+- Contact IT support
+- Printer hardware may be damaged

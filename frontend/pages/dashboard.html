@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <div class="logo-section">
+
+    <img src="../assets/favicon.png" class="logo-img">
+
+    <h1>Helpdesk AI</h1>
+
+</div>
+
+        <ul>
+
+            <li>
+                <a href="/index.html">🏠 Chat</a>
+            </li>
+
+            <li>
+                <a href="/pages/dashboard.html" class="active">
+                    📊 Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="/pages/ticket.html">
+                    🎫 Tickets
+                </a>
+            </li>
+
+            <li>
+                <a href="/pages/analytics.html">
+                    📈 Analytics
+                </a>
+            </li>
+
+            <li>
+                <a href="/pages/settings.html">
+                    ⚙️ Settings
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+
+            <div>
+                <h1>Dashboard</h1>
+                <p class="subtitle">
+                    Monitor all IT helpdesk activity in real time
+                </p>
+            </div>
+
+        </div>
+
+        <!-- STATS GRID -->
+        <div class="stats-grid">
+
+            <!-- TOTAL -->
+            <div class="stat-card blue">
+
+                <div class="card-info">
+                    <h3>Total Tickets</h3>
+                    <h1 id="totalTickets">0</h1>
+                </div>
+
+                <div class="card-icon">
+                    🎫
+                </div>
+
+            </div>
+
+            <!-- RESOLVED -->
+            <div class="stat-card green">
+
+                <div class="card-info">
+                    <h3>Resolved</h3>
+                    <h1 id="resolvedTickets">0</h1>
+                </div>
+
+                <div class="card-icon">
+                    ✅
+                </div>
+
+            </div>
+
+            <!-- OPEN -->
+            <div class="stat-card orange">
+
+                <div class="card-info">
+                    <h3>Open Tickets</h3>
+                    <h1 id="openTickets">0</h1>
+                </div>
+
+                <div class="card-icon">
+                    📂
+                </div>
+
+            </div>
+
+            <!-- HIGH PRIORITY -->
+            <div class="stat-card red">
+
+                <div class="card-info">
+                    <h3>High Priority</h3>
+                    <h1 id="highTickets">0</h1>
+                </div>
+
+                <div class="card-icon">
+                    ⚠️
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RECENT ACTIVITY -->
+        <div class="recent-section">
+
+            <div class="section-header">
+                <h2>Recent Activity</h2>
+            </div>
+
+            <div class="activity-box">
+
+                <div class="activity-item">
+                    <span>🟢 Ticket system connected successfully</span>
+                </div>
+
+                <div class="activity-item">
+                    <span>🔵 AI chatbot active and running</span>
+                </div>
+
+                <div class="activity-item">
+                    <span>🟡 Dashboard synced with backend API</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/js/dashboard.js"></script>
+
+</body>
+</html>

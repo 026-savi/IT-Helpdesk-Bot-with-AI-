@@ -1,0 +1,13 @@
+System Slow Solution:
+
+If system is running slow:
+
+1. Restart system
+2. Close unused applications
+3. Clear temporary files
+4. Check storage space
+5. Run antivirus scan
+
+If issue still continues:
+- Upgrade RAM
+- Contact IT support

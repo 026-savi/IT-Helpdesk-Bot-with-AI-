@@ -1,0 +1,19 @@
+Laptop Damage Emergency Solution:
+
+If your laptop is physically damaged, overheated, smoking, or exploded:
+
+1. Immediately turn off the laptop
+2. Disconnect charger and power supply
+3. Do not touch damaged battery parts
+4. Move away from flammable objects
+5. Contact IT support immediately
+
+Safety Warning:
+- Do not attempt to restart the laptop
+- Do not use damaged battery
+- Physical damage may cause fire hazard
+
+Next Steps:
+- Submit emergency IT ticket
+- Visit hardware support center
+- Replace damaged components if required

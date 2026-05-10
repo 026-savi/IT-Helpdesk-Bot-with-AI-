@@ -1,0 +1,13 @@
+Email Issue Solution:
+
+If your email is not working:
+
+1. Check your internet connection
+2. Make sure you are entering correct email and password
+3. Try logging in from browser instead of app
+4. Clear cache or restart email application
+5. Check if email server is down
+
+If issue still continues:
+- Contact IT support
+- Your account may be blocked or server may be down

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI IT Helpdesk</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<script>
+
+function fillIssue(issue){
+
+    const input = document.getElementById("userInput");
+
+    input.value = issue;
+
+    input.focus();
+
+}
+
+</script>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <div class="logo-section">
+
+            <img src="assets/favicon.png" class="logo-img">
+
+            <h1>Helpdesk AI</h1>
+
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="index.html">🏠 Chat</a>
+            </li>
+
+            <li>
+                <a href="pages/dashboard.html">📊 Dashboard</a>
+            </li>
+
+            <li>
+                <a href="pages/ticket.html">🎫 Tickets</a>
+            </li>
+
+            <li>
+                <a href="pages/analytics.html">📈 Analytics</a>
+            </li>
+
+            <li>
+                <a href="pages/settings.html">⚙️ Settings</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- MAIN CHAT AREA -->
+
+    <div class="main">
+
+        <!-- TOPBAR -->
+
+        <div class="topbar">
+
+            <h1>AI IT Helpdesk Assistant</h1>
+
+        </div>
+
+        <!-- QUICK SUPPORT -->
+
+        <div class="quick-support">
+
+            <h3>Quick Support</h3>
+
+            <div class="quick-buttons">
+
+                <button onclick="fillIssue('VPN is not working')">
+                    🌐 VPN Issue
+                </button>
+
+                <button onclick="fillIssue('Password reset problem')">
+                    🔐 Password Reset
+                </button>
+
+                <button onclick="fillIssue('Printer is not working')">
+                    🖨 Printer Issue
+                </button>
+
+                <button onclick="fillIssue('WiFi not connecting')">
+                    📶 WiFi Issue
+                </button>
+
+                <button onclick="fillIssue('System is running slow')">
+                    🐌 System Slow
+                </button>
+
+                <button onclick="fillIssue('Email is not working')">
+                    📧 Email Issue
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- CHAT AREA -->
+
+        <div class="chat-container">
+
+            <div class="chat-box" id="chat"></div>
+
+        </div>
+
+        <!-- INPUT AREA -->
+
+        <div class="input-area">
+
+            <input type="text" id="userInput" placeholder="Describe your issue...">
+
+            <button onclick="sendQuery()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/chat.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+WiFi Issue Solution:
+
+If WiFi is not working:
+
+1. Restart router
+2. Reconnect to WiFi
+3. Check internet cable
+4. Restart laptop
+5. Run network troubleshooter
+
+If issue still continues:
+- Contact network administrator
+- Internet service may be down

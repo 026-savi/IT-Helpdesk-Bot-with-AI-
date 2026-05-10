@@ -1,0 +1,14 @@
+VPN Connection Issue Solution:
+
+If VPN is not working or not connecting:
+
+1. Check your internet connection
+2. Restart VPN application
+3. Re-enter your VPN username and password
+4. Try connecting to another VPN server
+5. Restart your system
+
+If VPN still does not connect:
+- Contact IT support
+- VPN server may be temporarily down
+- Your VPN access may have expired

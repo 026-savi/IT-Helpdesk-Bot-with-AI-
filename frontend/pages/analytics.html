@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analytics</title>
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <div class="logo-section">
+
+    <img src="../assets/favicon.png" class="logo-img">
+
+    <h1>Helpdesk AI</h1>
+
+</div>
+
+        <ul>
+
+            <li><a href="../index.html">🏠 Chat</a></li>
+
+            <li><a href="dashboard.html">📊 Dashboard</a></li>
+
+            <li><a href="ticket.html">🎫 Tickets</a></li>
+
+            <li><a href="analytics.html" class="active">📈 Analytics</a></li>
+
+            <li><a href="settings.html">⚙️ Settings</a></li>
+
+        </ul>
+
+    </div>
+
+    <!-- MAIN -->
+
+    <div class="main">
+
+        <!-- TOPBAR -->
+
+        <div class="topbar">
+
+            <h1>Analytics</h1>
+
+            <p>Track helpdesk performance and ticket statistics</p>
+
+        </div>
+
+        <!-- STATS ROW -->
+
+        <div class="analytics-stats">
+
+            <div class="analytics-small-card blue">
+
+                <h3>Total Tickets</h3>
+
+                <h1 id="analyticsTotal">0</h1>
+
+            </div>
+
+            <div class="analytics-small-card green">
+
+                <h3>Resolved</h3>
+
+                <h1 id="analyticsResolved">0</h1>
+
+            </div>
+
+            <div class="analytics-small-card orange">
+
+                <h3>Open</h3>
+
+                <h1 id="analyticsOpen">0</h1>
+
+            </div>
+
+            <div class="analytics-small-card red">
+
+                <h3>High Priority</h3>
+
+                <h1 id="analyticsHigh">0</h1>
+
+            </div>
+
+        </div>
+
+        <!-- CHARTS GRID -->
+
+        <div class="analytics-grid">
+
+            <!-- Doughnut Chart -->
+
+            <div class="chart-card">
+
+                <h2>Ticket Status</h2>
+
+                <canvas id="statusChart"></canvas>
+
+            </div>
+
+            <!-- Bar Chart -->
+
+            <div class="chart-card">
+
+                <h2>Priority Distribution</h2>
+
+                <canvas id="priorityChart"></canvas>
+
+            </div>
+
+        </div>
+
+        <!-- LINE CHART -->
+
+       
+
+    </div>
+
+</div>
+
+<script src="../js/analytics.js"></script>
+
+</body>
+
+</html>
