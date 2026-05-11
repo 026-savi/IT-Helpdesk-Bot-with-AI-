@@ -121,3 +121,30 @@ http://127.0.0.1:5500/index.html
 ## 📜 License
 
 This project is for educational and learning purposes.
+
+
+
+# 📸 Project Screenshots
+
+## 🏠 Home Page
+![Home Page](screenshots/homepage.png)
+
+---
+
+## 🎫 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## 📊 Analytics
+![Analytics](screenshots/analytics.png)
+
+---
+
+## ⚙️ Settings
+![Settings](screenshots/settings.png)
+
+---
+
+## 🎟️ Tickets
+![Tickets](screenshots/tickets.png)
