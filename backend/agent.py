@@ -1,48 +1,44 @@
-from backend.rag import get_rag
+from groq import Groq
+from dotenv import load_dotenv
+import os
 
-# Similarity Threshold
-# Lower score = better match
-SIMILARITY_THRESHOLD = 1.5
+# Load environment variables
+load_dotenv()
 
+# Initialize Groq client
+client = Groq(
+    api_key=os.getenv("GROQ_API_KEY")
+)
 
-def handle_query(query: str) -> str:
+# AI Response Function
+def handle_query(query):
+
+    print("🔥 handle_query CALLED 🔥")
 
     try:
 
-        print("\n🔥 handle_query CALLED 🔥")
+        completion = client.chat.completions.create(
+            model="llama-3.3-70b-versatile",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are an IT Helpdesk Assistant. Give short and professional solutions."
+                },
+                {
+                    "role": "user",
+                    "content": query
+                }
+            ],
+            temperature=0.5,
+            max_tokens=200
+        )
 
-        # Load RAG database
-        rag = get_rag(query)
+        response = completion.choices[0].message.content
 
-        # Get top matching result
-        results = rag.similarity_search_with_score(query, k=1)
-
-        print("RESULTS:", results)
-
-        # Check if results exist
-        if results and len(results) > 0:
-
-            doc, score = results[0]
-
-            print("\n===== DEBUG =====")
-            print("Query:", query)
-            print("Score:", score)
-            print("Matched Content:", doc.page_content[:200])
-            print("=================\n")
-
-            # IMPORTANT:
-            # In FAISS similarity_search_with_score
-            # LOWER score = BETTER match
-
-            if score <= SIMILARITY_THRESHOLD:
-
-                return doc.page_content.strip()
-
-        # No relevant match found
-        return "No solution found. Ticket will be created."
+        return response
 
     except Exception as e:
 
-        print("ERROR in handle_query:", str(e))
+        print("ERROR in handle_query:", e)
 
         return "Something went wrong. Please try again."

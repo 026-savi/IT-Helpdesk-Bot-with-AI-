@@ -25,6 +25,6 @@ Base = declarative_base()
 
 def create_tables():
 
-    import models
+    from backend import models
 
     Base.metadata.create_all(bind=engine)
