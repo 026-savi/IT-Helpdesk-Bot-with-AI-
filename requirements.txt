@@ -7,5 +7,4 @@ python-dotenv
 sqlalchemy
 pydantic
 tiktoken
-langchain-community
-sentence-transformers
+langchain-openai
