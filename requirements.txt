@@ -1,10 +1,11 @@
 fastapi
 uvicorn
 langchain
+langchain-community
+langchain-openai
 openai
 chromadb
 python-dotenv
 sqlalchemy
 pydantic
 tiktoken
-langchain-openai
