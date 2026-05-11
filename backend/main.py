@@ -4,10 +4,10 @@ from fastapi import FastAPI, Depends, HTTPException
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
-from agent import handle_query
-from sentiment import detect_priority
-from db import SessionLocal, create_tables
-from models import Ticket
+from backend.agent import handle_query
+from backend.sentiment import detect_priority
+from backend.db import SessionLocal, create_tables
+from backend.models import Ticket
 
 # 🔧 Create DB tables
 create_tables()
