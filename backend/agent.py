@@ -1,4 +1,4 @@
-from rag import get_rag
+from backend.rag import get_rag
 
 # Similarity Threshold
 # Lower score = better match
