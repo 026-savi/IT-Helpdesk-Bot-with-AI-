@@ -8,3 +8,4 @@ sqlalchemy
 pydantic
 tiktoken
 langchain-community
+sentence-transformers
